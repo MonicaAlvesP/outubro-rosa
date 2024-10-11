@@ -3,7 +3,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
 }
 
 header {
@@ -13,12 +12,6 @@ header {
   align-items: center;
   background-color: #FF69B4;
   height: 15vh;
-}
-@media (max-width: 768px) {
-  header {
-    height: 15vh;
-    padding: 1rem 2rem;
-  }
 }
 
 .header-content {
@@ -32,11 +25,6 @@ header {
 }
 .header-content img {
   height: 14vh;
-}
-@media (max-width: 768px) {
-  .header-content {
-    display: none;
-  }
 }
 
 nav {
@@ -61,6 +49,17 @@ nav ul li a:hover {
 }
 
 @media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    height: 25vh;
+    padding: 1rem 2rem;
+  }
+  .header-content h1 {
+    font-size: 1.5rem;
+  }
+  .header-content img {
+    height: 10vh;
+  }
   nav {
     width: 100%;
     align-items: center;
@@ -72,85 +71,85 @@ nav ul li a:hover {
     font-size: 1rem;
   }
 }
-#sobre {
+#about {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   background-color: #FFD9EC;
   height: 85vh;
 }
-#sobre p {
+#about p {
   width: 45%;
   font-size: 1.5rem;
   font-weight: 400;
 }
-#sobre img {
+#about img {
   width: 35%;
 }
 @media (max-width: 768px) {
-  #sobre {
+  #about {
     flex-direction: column-reverse;
     align-items: center;
     text-align: justify;
     height: 100vh;
   }
-  #sobre p {
+  #about p {
     width: 90%;
     font-size: 18px;
   }
-  #sobre img {
+  #about img {
     width: 80%;
   }
 }
 
-#conscientizacao {
+#awareness {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   background-color: #FF69B4;
   height: 70vh;
 }
-#conscientizacao p {
+#awareness p {
   width: 47%;
   font-size: 1.5rem;
   font-weight: 400;
 }
-#conscientizacao img {
+#awareness img {
   width: 35%;
 }
 @media (max-width: 768px) {
-  #conscientizacao {
+  #awareness {
     flex-direction: column;
     align-items: center;
     text-align: justify;
   }
-  #conscientizacao p {
+  #awareness p {
     width: 90%;
     font-size: 18px;
   }
-  #conscientizacao img {
+  #awareness img {
     width: 90%;
   }
 }
 
-#dicas {
+#tips {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   background-color: #FFD9EC;
   height: 70vh;
 }
-#dicas img {
+#tips img {
   width: 20%;
 }
 @media screen and (max-width: 768px) {
-  #dicas {
+  #tips {
     flex-direction: column;
     align-items: center;
     height: 100%;
     padding: 1rem;
   }
-  #dicas img {
+  #tips img {
     width: 60%;
   }
 }
@@ -163,16 +162,6 @@ footer {
 }
 footer img {
   width: 8vw;
-}
-@media (max-width: 768px) {
-  footer {
-    height: 100%;
-    flex-direction: column-reverse;
-    justify-content: center;
-  }
-  footer img {
-    display: none;
-  }
 }
 
 .social-icons {
@@ -194,11 +183,6 @@ footer img {
 .social-icons ul li a:hover {
   color: #FFD9EC;
 }
-@media (max-width: 768px) {
-  .social-icons {
-    width: 80%;
-  }
-}
 
 .credits {
   width: 30%;
@@ -208,7 +192,22 @@ footer img {
 .credits span {
   font-weight: 700;
 }
+
 @media (max-width: 768px) {
+  footer {
+    height: 100%;
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+  footer img {
+    width: 20vw;
+  }
+  .social-icons {
+    width: 80%;
+  }
+  .social-icons i {
+    font-size: 2rem;
+  }
   .credits {
     width: 100%;
     padding: 1rem;

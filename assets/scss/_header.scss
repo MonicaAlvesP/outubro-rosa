@@ -1,0 +1,81 @@
+@import 'colors';
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 5rem;
+  align-items: center;
+  background-color: $primary-color;
+  height: 15vh;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+
+  h1 {
+    color: white;
+    text-transform: uppercase;
+    font-weight: 400;
+  }
+
+  img {
+    height: 14vh;
+  }
+}
+
+nav {
+  width: 30%;
+
+  ul {
+    display: flex;
+    justify-content: space-evenly;
+
+    li {
+      list-style: none;
+
+      a {
+        text-decoration: none;
+        color: white;
+        font-size: 1.2rem;
+        font-weight: 400;
+        text-transform: uppercase;
+      }
+
+      a:hover {
+        color: $secondary-color;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    height: 25vh;
+    padding: 1rem 2rem;
+  }
+
+  .header-content {
+    h1 {
+      font-size: 1.5rem;
+    }
+
+    img {
+      height: 10vh;
+    }
+  }
+
+  nav {
+    width: 100%;
+    align-items: center;
+  }
+
+  ul {
+    gap: 1rem;
+  }
+
+  li {
+    font-size: 1rem;
+  }
+}
