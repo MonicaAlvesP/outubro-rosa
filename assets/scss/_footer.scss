@@ -4,7 +4,13 @@ footer {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: $primary-color;
+  background: $primary-color;
+  text-align: center;
+
+  h4 {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
 
   img {
     width: 8vw;
@@ -14,29 +20,22 @@ footer {
 .social-icons {
   width: 20%;
 
-  ul {
-    display: flex;
-    justify-content: space-evenly;
+  a {
+    text-decoration: none;
 
-    li {
-      list-style: none;
+    i {
+      font-size: 2rem;
+      color: #000;
+      margin: 1rem;
+    }
 
-      a {
-        text-decoration: none;
-        color: black;
-        font-size: 56px;
-        font-weight: 400;
-      }
-
-      a:hover {
-        color: $secondary-color;
-      }
+    i:hover {
+      color: $secondary-color;
     }
   }
 }
 
 .credits {
-  width: 30%;
   color: white;
   text-align: center;
 
